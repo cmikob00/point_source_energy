@@ -1,0 +1,5 @@
+Equation-of-State-related Outputs for  Energy (kT): 1.0 Altitude (km): 0.0 Initial Radius (cm): 10.0 Timestep size (sec): 0.0001 Ending Time (sec): 10.0 Adiabatic Index (EOS): 1.4
+
+rho (g/cm**3)    0.001225
+atm density ratio1.0
+E (erg)          4.1839953808690995e+19

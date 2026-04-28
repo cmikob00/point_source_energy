@@ -1,0 +1,13 @@
+1.
+0.
+10
+0.0001
+10.
+1.4
+
+Line 1 = energy in kT
+Line 2 = Altitude in km
+Line 3 = initial radius in cm
+Line 4 = timestep in sec
+Line 5 = ending time in sec
+Line 6 = equation of state function G_gam
