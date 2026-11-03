@@ -46,14 +46,14 @@ from matplotlib.colors import LogNorm, TwoSlopeNorm, SymLogNorm
 # =============================================================================
 
 # Explosion and ambient atmosphere
-E_kt = 20.0                 # explosion energy [kt]
-HOB = 80.0                # height of burst above reflecting plane [m]
-rho0 = 1.225               # ambient density [kg/m^3]
+E_kt = 330.0                 # explosion energy [kt]
+HOB = 500.0                # height of burst above reflecting plane [m]
+rho0 = 1.15               # ambient density [kg/m^3]
 p0 = 1.01325e5              # ambient pressure [Pa]
 gamma = 1.4                # ratio of specific heats
 
 # Time interval
-t_end = 0.20               # simulation end time [s]
+t_end = 0.3               # simulation end time [s]
 CFL = 0.40                 # Courant number; keep <= 0.5 for this scheme
 MAX_STEPS = 500000
 
@@ -78,6 +78,7 @@ SNAPSHOT_TIMES = (
     1.0e-3, 3.0e-3, 5.e-3,
     1.0e-2, 3.0e-2, 5.e-2,
     1.0e-1, 3.0e-1, 5.e-1,
+    1.0e+0, 3.0e+0, 5.e+0,
 )
 
 SNAPSHOT_OUTPUT_DIR = "blast_wave_snapshots"
