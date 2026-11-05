@@ -88,12 +88,12 @@ from matplotlib.colors import LogNorm, TwoSlopeNorm, SymLogNorm
 # Explosion and ambient atmosphere
 E_kt = 20.0                 # explosion energy [kt]
 HOB = 30.0                # height of burst above reflecting plane [m]
-rho0 = 1.15               # ambient density [kg/m^3]
+rho0 = 1.225               # ambient density [kg/m^3]
 p0 = 1.01325e5              # ambient pressure [Pa]
 gamma = 1.4                # ratio of specific heats
 
 # Time interval
-t_end = 0.018               # simulation end time [s]
+t_end = 0.03               # simulation end time [s]
 CFL = 0.40                 # Courant number; keep <= 0.5 for this scheme
 MAX_STEPS = 500000
 
@@ -177,12 +177,12 @@ MAKE_PLOTS = True
 # Logarithmically spaced snapshot targets resolve the early blast expansion.
 # Targets later than t_end are ignored; the final state is always included.
 SNAPSHOT_TIMES = (
-    1.0e-5, 3.0e-5, 5.e-5,
-    1.0e-4, 3.0e-4, 5.e-4,
-    1.0e-3, 3.0e-3, 5.e-3,
-    1.0e-2, 3.0e-2, 5.e-2,
-    1.0e-1, 3.0e-1, 5.e-1,
-    1.0e+0, 3.0e+0, 5.e+0,
+    1.0e-5, 2.5e-5, 5.e-5,
+    1.0e-4, 2.5e-4, 5.e-4,
+    1.0e-3, 2.5e-3, 5.e-3,
+    1.0e-2, 2.5e-2, 5.e-2,
+    1.0e-1, 2.5e-1, 5.e-1,
+    1.0e+0, 2.5e+0, 5.e+0,
 )
 
 SNAPSHOT_OUTPUT_DIR = "blast_wave_snapshots"
